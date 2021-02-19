@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<title>Insel Apotheke Ilvesheim</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<div class="container">
+
+		<div class="header">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.svg" width="100"></a>
+			</div>
+			<div class="navigationbar abstand">
+				<ul>
+					<li><a href="index.html">Start</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="produkte.html" >Produkte</a></li>
+					<li><a href="termin.html" class="active">Termin</a></li>
+					<li><a href="ueberuns.html">Über uns</a></li>
+				</ul>
+			</div>
+		</div>
+
+		
+		<div class="mittelachsentext">
+			<h2>Termin</h2><br>
+			<p>Buche noch heute deinen Abholtermin<br><br>
+				Fülle dafür alle Felder aus und sende deine Bestellung ab
+			</p><br>
+
+			<form class="form" action="./" method="POST">
+				
+				
+				<div class="form__item">
+					<label for="Vorname" class="form__label">Vorname</label>
+					<input type="text" class="form__input" name="Vorname" id="Vorname" placeholder="Max">
+					
+				</div>
+				<div class="form__item">
+					<label for="Nachname" class="form__label">Nachname</label>
+					<input type="text" class="form__input" name="Nachname" id="Nachname" placeholder="Mustermann">
+					
+				</div>
+				<div class="form__item">
+					<label for="Telefonnummer" class="form__label">Telefonnummer</label>
+					<input type="text" class="form__input" name="Telefonnummer" id="Telefonnummer" placeholder="0621 1234567">
+					
+				</div>
+				<div class="form__item">
+					<label for="Email-Adresse" class="form__label">Email-Adresse</label>
+					<input type="text" class="form__input" name="Email-Adresse" id="Email-Adresse" placeholder="maxmustermann@web.de">
+					
+				</div>
+
+				<div class="form__item">
+					<label for="Datum" class="form__label">Abholdatum</label>
+					<input type="date" class="form__input form__input--small" name="Datum" id="Datum" placeholder="">
+					
+				</div>
+
+				<div class="form__item">
+					<label for="Uhrzeit" class="form__label">Uhrzeit</label>
+					<input type="time" class="form__input form__input--small" name="Uhrzeit" id="Uhrzeit" placeholder="">
+					
+				</div>
+				<div class="form__item">
+					<label for="Bestellung" class="form__label">Ihre Bestellung</label>
+					<textarea maxlength="500" class="form__input" name="Bestellung" id="Bestellung" placeholder="Produktname - Menge"></textarea>
+					
+				</div>
+				<div class="form__item">
+					<label for="E-Rezept" class="form__label">E-Rezept einreichen</label>
+					<input type="file" class="form__input" name="E-Rezept" id="E-Rezept" placeholder="Mustermann">
+					
+				</div>
+				<div class="form__item">
+					<button class="form__btn" type="submit" disabled >Abschicken</button>
+				</div>
+			</form>
+
+			<br><br>
+
+
+
+		</div>
+
+
+		<div class="navigationbar">
+			<ul class="footer">
+				<li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+				<li><a href="impressum.html">Impressum</a></li>
+				<li><a href="">Created by M Weihs</a></li>
+			</ul>
+		</div>
+		
+		
+	</div>
+
+	
+</body>
+</html>
